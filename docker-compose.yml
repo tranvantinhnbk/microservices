@@ -1,0 +1,16 @@
+services:
+  api_gateway:
+    build:
+      context: ./api_gateway
+      dockerfile: Dockerfile
+    ports:
+      - "8089:80"
+
+
+  # user-service:
+  #   image: your-user-service-image  # Replace with your actual user service image
+  #   container_name: user-service
+  #   ports:
+  #     - "3000:3000"  # Expose port 3000 for the user service
+  #   networks:
+  #     - gateway-network
