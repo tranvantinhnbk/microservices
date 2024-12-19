@@ -4,7 +4,8 @@ services:
       context: ./api_gateway
       dockerfile: Dockerfile
     ports:
-      - "8089:80"
+      - "80:80"
+      - "443:443"
 
 
   # user-service:
